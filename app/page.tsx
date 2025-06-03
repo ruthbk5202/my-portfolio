@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-// Define types for props (if needed)
+
 type Project = {
   id: number;
   title: string;
@@ -10,9 +10,9 @@ type Project = {
   link: string;
 };
 
-// Portfolio Component
+
 const Portfolio: React.FC = () => {
-  // Sample projects data
+  
   const projects: Project[] = [
     {
       id: 1,
@@ -39,7 +39,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="bg-black text-white font-sans">
-      {/* Navbar */}
+    
       <nav className="bg-gray-900 p-6 fixed w-full top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-gray-300">
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+     
       <section className="h-screen flex items-center justify-center bg-gray-900">
         <div className="text-center px-6 py-6">
           <h1 className="text-6xl font-bold text-gray-300">
@@ -108,7 +108,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* About Section */}
+    
       <section id="about" className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-300 text-center">
@@ -124,13 +124,13 @@ const Portfolio: React.FC = () => {
             </div>
             <div className="md:w-1/2 md:ml-8 mt-8 md:mt-0">
               <p className="text-gray-400 leading-relaxed">
-                I'm a passionate developer with over 5 years of experience in
+                I'm a passionate developer with over in
                 building scalable and user-friendly web applications. I
-                specialize in JavaScript, React, Node.js, and Tailwind CSS. I
+                specialize in typeScript, Nextjs, Node.js, and regular css. I
                 love solving complex problems and turning ideas into reality.
               </p>
               <p className="mt-4 text-gray-400 leading-relaxed">
-                When I'm not coding, I enjoy hiking, photography, and exploring
+                When I'm not coding, I enjoy crocheting and exploring
                 new technologies.
               </p>
             </div>
@@ -138,7 +138,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+  
       <section id="projects" className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-300 text-center">
@@ -171,7 +171,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      
       <section id="contact" className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-gray-300 text-center">
@@ -218,7 +218,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-gray-900 py-6">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">© 2023 John Doe. All rights reserved.</p>
