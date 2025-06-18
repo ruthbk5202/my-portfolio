@@ -1,0 +1,116 @@
+import React from "react";
+// import {  } from '@mui/material';
+import { BookOpen, Code, Briefcase, User } from "lucide-react";
+
+const About = () => {
+  return (
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-slate-50 to-white"
+    >
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About Me
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Get to know more about my background and expertise
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+  {/* Left Column - Photo Section */}
+  <div className="space-y-6">
+    <div className="overflow-hidden shadow-lg border-0 rounded-lg">
+      <div className="p-0">
+        <div className="bg-gradient-to-br from-blue-100 to-purple-100 h-96 flex items-center justify-center">
+          <div className="text-center">
+            <User className="h-24 w-24 text-gray-400 mx-auto mb-4" />
+            <p className="text-gray-600 font-medium">Professional Photo</p>
+            <p className="text-sm text-gray-500">Upload your image here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Right Column - Details Section */}
+  <div className="space-y-6">
+    {/* Education */}
+    <div className="shadow-lg rounded-lg border border-gray-200 p-6">
+      <div className="flex items-center mb-4">
+        <div className="bg-gray-100 p-3 rounded-full mr-4">
+          <BookOpen className="h-5 w-5 text-gray-800" />
+        </div>
+        <h3 className="text-xl font-bold text-gray-800">Education</h3>
+      </div>
+      <div className="pl-4 border-l-2 border-gray-300">
+        <h4 className="font-medium text-gray-900">
+          B.Sc. CSIT - Godawari College
+        </h4>
+        <p className="text-sm text-gray-500">2077 - 2082</p>
+      </div>
+    </div>
+
+    {/* Experience */}
+    <div className="shadow-lg rounded-lg border border-gray-200 p-6">
+      <div className="flex items-center mb-4">
+        <div className="bg-gray-100 p-3 rounded-full mr-4">
+          <Briefcase className="h-5 w-5 text-gray-800" />
+        </div>
+        <h3 className="text-xl font-bold text-gray-800">Experience</h3>
+      </div>
+      <div className="pl-4 border-l-2 border-gray-300">
+        <h4 className="font-medium text-gray-900">
+          Frontend Developer (6 months+)
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+          {/* Skills
+            <div className="shadow-lg border-0 hover:shadow-xl transition-all duration-300">
+              <div className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-orange-100 p-3 rounded-full mr-4">
+                    <Code className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Skills</h3>
+                </div>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Technical Skills</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Git', 'TypeScript'].map((skill) => (
+                        <span 
+                          key={skill} 
+                          className="bg-blue-50 text-blue-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Soft Skills</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {['Problem Solving', 'Communication', 'Teamwork', 'Adaptability', 'Time Management'].map((skill) => (
+                        <span 
+                          key={skill} 
+                          className="bg-green-50 text-green-800 px-3 py-2 rounded-full text-sm font-medium hover:bg-green-100 transition-colors"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+        </div>
+      
+    </section>
+  );
+};
+
+export default About;
