@@ -18,57 +18,52 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-  {/* Left Column - Photo Section */}
-  <div className="space-y-6">
-    <div className="overflow-hidden shadow-lg border-0 rounded-lg">
-      <div className="p-0">
-        <div className="bg-gradient-to-br from-blue-100 to-purple-100 h-96 flex items-center justify-center">
-          <div className="text-center">
-            <User className="h-24 w-24 text-gray-400 mx-auto mb-4" />
-            <p className="text-gray-600 font-medium">Professional Photo</p>
-            <p className="text-sm text-gray-500">Upload your image here</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ">
+          {/* Left Column - Photo Section */}
+
+           <div className="overflow-hidden rounded-4xl w-124 h-full min-h-96 bg-gray-100 flex items-center justify-center">
+    <img
+      src="images/gray.jpg"
+      className="w-full h-full object-contain max-h-[500px]"
+      alt="Profile photo"
+    />
+  </div>
+
+          {/* Right Column - Details Section */}
+          <div className="space-y-6">
+            {/* Education */}
+            <div className="shadow-lg rounded-lg border border-gray-200 p-6">
+              <div className="flex items-center mb-4">
+                <div className="bg-gray-100 p-3 rounded-full mr-4">
+                  <BookOpen className="h-5 w-5 text-gray-800" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Education</h3>
+              </div>
+              <div className="pl-4 border-l-2 border-gray-300">
+                <h4 className="font-medium text-gray-900">
+                  B.Sc. CSIT - Godawari College
+                </h4>
+                <p className="text-sm text-gray-500">2077 - 2082</p>
+              </div>
+            </div>
+
+            {/* Experience */}
+            <div className="shadow-lg rounded-lg border border-gray-200 p-6">
+              <div className="flex items-center mb-4">
+                <div className="bg-gray-100 p-3 rounded-full mr-4">
+                  <Briefcase className="h-5 w-5 text-gray-800" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Experience</h3>
+              </div>
+              <div className="pl-4 border-l-2 border-gray-300">
+                <h4 className="font-medium text-gray-900">
+                  Frontend Developer (6 months+)
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  {/* Right Column - Details Section */}
-  <div className="space-y-6">
-    {/* Education */}
-    <div className="shadow-lg rounded-lg border border-gray-200 p-6">
-      <div className="flex items-center mb-4">
-        <div className="bg-gray-100 p-3 rounded-full mr-4">
-          <BookOpen className="h-5 w-5 text-gray-800" />
-        </div>
-        <h3 className="text-xl font-bold text-gray-800">Education</h3>
-      </div>
-      <div className="pl-4 border-l-2 border-gray-300">
-        <h4 className="font-medium text-gray-900">
-          B.Sc. CSIT - Godawari College
-        </h4>
-        <p className="text-sm text-gray-500">2077 - 2082</p>
-      </div>
-    </div>
-
-    {/* Experience */}
-    <div className="shadow-lg rounded-lg border border-gray-200 p-6">
-      <div className="flex items-center mb-4">
-        <div className="bg-gray-100 p-3 rounded-full mr-4">
-          <Briefcase className="h-5 w-5 text-gray-800" />
-        </div>
-        <h3 className="text-xl font-bold text-gray-800">Experience</h3>
-      </div>
-      <div className="pl-4 border-l-2 border-gray-300">
-        <h4 className="font-medium text-gray-900">
-          Frontend Developer (6 months+)
-        </h4>
-      </div>
-    </div>
-  </div>
-</div>
-          {/* Skills
+        {/* Skills
             <div className="shadow-lg border-0 hover:shadow-xl transition-all duration-300">
               <div className="p-8">
                 <div className="flex items-center mb-6">
@@ -107,8 +102,7 @@ const About = () => {
                 </div>
               </div>
             </div> */}
-        </div>
-      
+      </div>
     </section>
   );
 };
