@@ -31,7 +31,7 @@ const About = () => {
 
           {/* Right Column - Details Section */}
           <div className="space-y-6">
-            {/* Education */}
+       
             <div className="shadow-lg rounded-lg border border-gray-200 p-6">
               <div className="flex items-center mb-4">
                 <div className="bg-gray-100 p-3 rounded-full mr-4">
@@ -47,7 +47,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Experience */}
+           
             <div className="shadow-lg rounded-lg border border-gray-200 p-6">
               <div className="flex items-center mb-4">
                 <div className="bg-gray-100 p-3 rounded-full mr-4">
@@ -59,6 +59,25 @@ const About = () => {
                 <h4 className="font-medium text-gray-900">
                   Frontend Developer (6 months+)
                 </h4>
+              </div>
+            </div>
+            <div className="shadow-lg rounded-lg border border-gray-200 p-6">
+              <div className="flex items-center mb-4">
+                <div className="bg-gray-100 p-3 rounded-full mr-4">
+                  <Briefcase className="h-5 w-5 text-gray-800" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Skills</h3>
+              </div>
+              <div className="pl-4 border-l-2 border-gray-300">
+                <h4 className="font-medium text-gray-900">
+                  React, Nextjs, MongoDB, Node.js, HTML/CSS, Git, TypeScript
+                </h4>
+                <div>
+                   
+                   
+                     
+                
+                  </div>
               </div>
             </div>
           </div>

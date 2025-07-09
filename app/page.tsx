@@ -20,32 +20,23 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: "Reminder System",
       description: "A comprehensive vaccination reminder system built with Next.js and Tailwind CSS that helps users track important medical dates.",
-      image: "/images/blooming.png",
+      image: "/images/vaccinereminder.png",
       link: "#",
-      githubLink: "#",
-      demoLink: "#",
+      githubLink: "https://github.com/ruthbk5202/vaccine-reminder-demo-web-app",
+      demoLink: "https://vaccine-reminder-demo-web-app.vercel.app/",
       tags: ["Next.js", "Tailwind CSS", "Firebase"]
     },
     {
       id: 2,
       title: "Blooming Delights",
       description: "An e-commerce platform for floral arrangements with cart functionality and payment integration.",
-      image: "/images/vaccinereminder.png",
+      image: "/images/blooming.png",
       link: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/ruthbk5202/ecommerce-demo",
       demoLink: "#",
       tags: ["React", "Node.js", "MongoDB"]
     },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      description: "A responsive portfolio template built with modern web technologies.",
-      image: "/images/portfolio.png",
-      link: "#",
-      githubLink: "#",
-      demoLink: "#",
-      tags: ["Next.js", "TypeScript", "Tailwind"]
-    },
+   
   ];
 
   // Smooth scroll handler
