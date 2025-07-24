@@ -15,6 +15,15 @@ type Project = {
 };
 
 const Portfolio: React.FC = () => {
+  const handleDownloadCV = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  e.preventDefault(); 
+  const link = document.createElement('a');
+  link.href = '/images/ruthbk.pdf';
+  link.download = 'RuthBishwakarma_CV.pdf'; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   const projects: Project[] = [
     {
       id: 1,
@@ -33,13 +42,13 @@ const Portfolio: React.FC = () => {
       image: "/images/blooming.png",
       link: "#",
       githubLink: "https://github.com/ruthbk5202/ecommerce-demo",
-      demoLink: "#",
+      demoLink: "https://bloomigdelights.vercel.app/",
       tags: ["React", "Node.js", "MongoDB"]
     },
    
   ];
 
-  // Smooth scroll handler
+ 
   const handleSmoothScroll = (e: React.MouseEvent, targetId: string) => {
     e.preventDefault();
     const element = document.getElementById(targetId);
@@ -53,7 +62,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="bg-gray-50 text-gray-800 font-sans min-h-screen overflow-x-hidden antialiased scroll-smooth">
-      {/* Navigation */}
+     
       <nav className="relative">
         <div className="absolute top-0 left-0 w-full h-24 bg-[#F8FBF7] overflow-hidden">
           <div className="absolute bottom-0 left-0 w-full h-20 bg-[#F8FBF7] rounded-b-[60%]"></div>
@@ -104,7 +113,7 @@ const Portfolio: React.FC = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+    
       <section className="min-h-[90vh] bg-[#F8FBF7] pt-16 pb-8">
         <div className="container mx-auto h-full px-4 sm:px-6 flex items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -131,6 +140,7 @@ const Portfolio: React.FC = () => {
                 <a
                   href="https://github.com"
                   target="_blank"
+                 
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-[#B0DB9C] transition-colors"
                 >
@@ -152,9 +162,10 @@ const Portfolio: React.FC = () => {
                 </a>
               </div>
               <a
-                href="#projects"
+                href="/images/ruthbk.pdf"
+                download="ruthbk.pdf"
                 className="inline-block bg-[#B0DB9C] border border-gray-900 px-6 py-3 rounded-full hover:bg-[#9DCA89] transition-colors font-medium text-base"
-                onClick={(e) => handleSmoothScroll(e, 'projects')}
+                onClick={(e) => handleDownloadCV(e)}
               >
                 Download CV
               </a>
@@ -163,10 +174,9 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <About />
     
-      {/* Projects Section */}
+    
       <section id="projects" className="py-16 sm:py-24 ">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="text-center mb-16">
@@ -228,7 +238,6 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
   
-      {/* Contact Section */}
       <section id="contact" className="py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 max-w-2xl">
           <div className="text-center mb-12">
@@ -280,7 +289,7 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
+    
       <footer className="bg-[#E8F4E3] py-12">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col items-center">
